@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <!-- Adicionando o Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Adicionando o CSS customizado -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <!-- Criação do formulário de login -->
+    <div class="container">
+        <h2>Login Form</h2>
+        <form>
+            <div class="input-field">
+                <input type="text" id="username" class="validate">
+                <label for="username">Username</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="password" class="validate">
+                <label for="password">Password</label>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+
+    <!-- Adicionando o jQuery e o Materialize JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Adicionando o JavaScript customizado -->
+    {% load static %}
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
